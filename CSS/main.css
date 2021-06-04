@@ -1,0 +1,634 @@
+/* .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 1920px;
+}
+
+.side-bar {
+  max-width: 720px;
+  background-color: rgb(245, 240, 240);
+  color: rgb(79, 190, 228);
+  font-family: "Roboto Bold";
+}
+.main {
+  margin-top: 50px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.photo,
+.title-photo {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.photo > img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.contacts,
+.about-me,
+.skills,
+.prof-skills {
+  color: black;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.contacts p,
+.about-me p,
+.skills p,
+.prof-skills p {
+  color: lightblue;
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+
+.img-edu {
+  color: lightblue;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+.school,
+.university {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.school-place,
+.university-place {
+  margin-left: 150px;
+} */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 830px;
+  }
+}
+
+@media (max-width: 829px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.sidebar {
+  margin-bottom: 50px;
+  max-width: 350px;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 830px) {
+  .sidebar {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 829px) {
+  .sidebar h3 {
+    font-size: 30px;
+  }
+}
+
+.photo,
+.title-photo {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffa90a;
+}
+
+.title-photo h1 {
+  font-family: "Poppins SemiBold";
+  font-size: 22px;
+}
+
+.title-photo h2 {
+  color: #ffd793;
+  font-family: "Poppins Regular";
+  font-size: 16px;
+}
+
+.photo > img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .title-photo h1,
+  .title-photo h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 829px) {
+  .title-photo h1,
+  .title-photo h2 {
+    font-size: 28px;
+  }
+}
+
+.contact,
+.aboutMe,
+.langSkills,
+.profSkills {
+  font-family: "Poppins SemiBold";
+  color: #ffa90a;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.contact h3,
+.aboutMe h3,
+.langSkills h3,
+.profSkills h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact h3:hover,
+.aboutMe h3:hover,
+.langSkills h3:hover,
+.profSkills h3:hover {
+  color: #ffffff;
+}
+
+.contIcon {
+  color: #ffa90a;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.string {
+  margin-top: 7px;
+  margin-right: 30px;
+  width: 55%;
+  height: 10px;
+  background-color: #ffa90a;
+  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .string {
+    width: 45%;
+  }
+}
+
+.string2 {
+  width: 40%;
+}
+
+.stringParam {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact p,
+.aboutMe p,
+.langSkills ul > li,
+.profSkills p {
+  color: #ffd793;
+  font-size: 18px;
+  font-family: "Poppins Regular";
+  font-weight: bold;
+}
+
+.contact p:hover,
+.aboutMe p:hover,
+.langSkills ul > li:hover,
+.profSkills p:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .contact p,
+  .aboutMe p,
+  .langSkills ul > li,
+  .profSkills p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 829px) {
+  .contact p,
+  .aboutMe p,
+  .langSkills ul > li,
+  .profSkills p {
+    font-size: 18px;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dotM {
+  margin-right: 30px;
+}
+
+.dot {
+  color: #ffa90a;
+  letter-spacing: 3px;
+}
+
+.emptyDot {
+  color: #ffd793;
+}
+
+.langSkills ul {
+  padding-left: 20px;
+}
+
+.sidebar + .main {
+  margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar + .main {
+    margin-left: 20px;
+  }
+}
+
+.main {
+  width: 800px;
+  height: 1378px;
+  padding-top: 20px;
+  background-color: #999999;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  color: #ffd793;
+  -webkit-box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 9px 15px 12px 2px rgba(0, 0, 0, 0.26);
+  font-family: "Poppins Regular";
+}
+
+@media (max-width: 1399px) {
+  .main {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    width: 550px;
+    height: 1318px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    width: 375px;
+  }
+}
+
+@media (max-width: 830px) {
+  .main {
+    width: 550px;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    width: 350px;
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+  }
+}
+
+.main h2 {
+  font-family: "Poppins SemiBold";
+  color: #ffd793;
+}
+
+@media (max-width: 991px) {
+  .main h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 830px) {
+  .main h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 435px) {
+  .main h2 {
+    font-size: 20px;
+  }
+}
+
+.education {
+  margin-bottom: 20px;
+}
+
+.school,
+.university {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins SemiBold";
+}
+
+.years {
+  width: 250px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .years {
+    width: 175px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .years {
+    width: 125px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 830px) {
+  .years {
+    width: 175px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 511px) {
+  .years {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+.places {
+  width: 350px;
+  color: #ffffff;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .places {
+    width: 275px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .places {
+    width: 200px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 830px) {
+  .places {
+    width: 275px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 511px) {
+  .places {
+    width: 225px;
+    font-size: 14px;
+  }
+}
+
+.city {
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .city {
+    width: 175px;
+    font-size: 12px;
+  }
+}
+
+.carousel {
+  position: relative;
+  left: 100px;
+  margin-top: 20px;
+  width: 600px;
+  height: 350px;
+}
+
+@media (max-width: 1400px) {
+  .carousel {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel {
+    width: 400px;
+    height: 250px;
+    left: 75px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    width: 300px;
+    height: 200px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 830px) {
+  .carousel {
+    width: 450px;
+    height: 275px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    left: 30px;
+  }
+}
+
+@media (max-width: 511px) {
+  .carousel {
+    width: 400px;
+    height: 250px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 457px) {
+  .carousel {
+    width: 375px;
+    height: 250px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 435px) {
+  .carousel {
+    width: 350px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 411px) {
+  .carousel {
+    width: 325px;
+    height: 200px;
+    left: 20px;
+  }
+}
+
+.carousel-item img {
+  border-radius: 10px;
+}
+
+.carousel-indicators button {
+  background-color: #ffd793 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #ffa90a !important;
+}
+
+.profExp div:nth-child(2),
+div + .about {
+  margin-top: 20px;
+}
+
+.exp ul,
+.about {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Poppins Regular";
+  font-size: 16px;
+  text-align: justify;
+  color: white;
+}
+
+.exp h4,
+.exp h4 + p {
+  font-family: "Poppins SemiBold";
+  text-align: left;
+  padding-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .exp h4,
+  .exp h4 + p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .exp h4 + p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .exp h4 + p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .exp ul,
+  .pSpace {
+    font-size: 14px;
+  }
+}
+
+.pSpace {
+  text-indent: 20px;
+}
+
+@media (max-width: 830px) {
+  .exp ul,
+  .pSpace {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}

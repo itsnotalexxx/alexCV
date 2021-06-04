@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.left-side-bar {
+  margin: 0;
+  width: 440px;
+  padding: 0;
+  background-color: rgb(245, 240, 240);
+  color: rgb(79, 190, 228);
+  font-family: "Roboto Bold";
+}
+
+.photo,
+.title-photo {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.photo > img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.contacts,
+.about-me,
+.skills,
+.prof-skills {
+  color: black;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.contacts p,
+.about-me p,
+.skills p,
+.prof-skills p {
+  color: lightblue;
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+
+.right-side-bar {
+  color: rgb(79, 190, 228);
+  font-family: "Roboto Bold";
+  text-align: center;
+}
+.string {
+  width: 100%;
+  height: 20px;
+  background-color: green;
+}
+
+.education-1,
+.education-2 {
+  text-align: center;
+  font-family: "Roboto Bold";
+}
+
+.education-1 {
+  margin-top: 45px;
+}
+
+.education-2 {
+  margin-top: 50px;
+}
+
+.education-2 div + p {
+  margin-top: 14px;
+}
+
+.portfolio-2 {
+  margin-top: 5px;
+}
+
+.works {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid black;
+}
